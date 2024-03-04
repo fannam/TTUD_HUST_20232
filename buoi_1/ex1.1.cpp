@@ -1,11 +1,6 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-typedef struct info{
-    int hashed_value;
-    int total_call;
-    int time_call;
-}info;
 int hash_time(string s){
     return (s[0]-'0')*36000 + (s[1]-'0')*3600 + (s[3]-'0')*600 + (s[4]-'0')*60 + (s[6]-'0')*10 + (s[7]-'0');
 }
@@ -30,12 +25,6 @@ int main()
             map_phone_number[f_number].second++;
             if(f_number.length()!=10||t_number.length()!=10) format_phone_number = false;
         }
-    }
-    for(auto e:total_called_time){
-        printf("%d %d\n", e.first, e.second);
-    }
-    for(auto e:map_phone_number){
-        printf("%d %d %d\n", e.first, e.second.first, e.second.second);
     }
     while(1){
         string cmd;
