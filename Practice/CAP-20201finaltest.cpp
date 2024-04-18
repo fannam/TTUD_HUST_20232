@@ -22,7 +22,7 @@ int merge_and_count(vector<int>& arr1, int n, vector<int>& arr2, int m) {
 		else {
             //merged_arr[k++] = arr1[i++];
             k++;
-            j++;
+            i++;
             j++;
             counter++;
         }
